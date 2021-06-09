@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+{% csrf_token %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,7 @@
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            {% load static %}
-            <img class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap" src="{% static "html_images/logo.svg" %}" alt="AS" "></img>
+            <h3>Platforuma</h3>
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -51,6 +50,7 @@
       </div>
 
       <div class="col-md-5">
+
         <img src="{{blog.image.url}}" class="p-mb-4 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveaspectratio="xMidYMid slice" focusable="false"></img>
 
       </div>
@@ -85,6 +85,7 @@
 
 </footer>
 <!-- Footer -->
+
 
 </body>
 </html>
