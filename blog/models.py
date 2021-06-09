@@ -4,7 +4,7 @@ from froala_editor.fields import FroalaField
 class BlogDetail(models.Model):
     title = models.CharField(max_length=200)
     content=FroalaField()
-    image=models.ImageField(upload_to="media/images")
+    image=models.ImageField(upload_to="images")
     into=models.TextField(null=True,blank=True)
     slug = models.SlugField(max_length=1000, null=True, blank=True)
 
