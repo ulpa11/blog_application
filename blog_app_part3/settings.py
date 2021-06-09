@@ -24,6 +24,7 @@ SECRET_KEY = 'django-insecure-_=1)#c8k7_-j)j7_w=l(&0u0*2-2x4^#+s4oheuphq*9zp@%sw
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+
 ALLOWED_HOSTS = ["blogapplication11.herokuapp.com","127.0.0.1:8000",'127.0.0.1']
 
 
@@ -122,7 +123,7 @@ USE_TZ = True
 
 import os
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR , 'staticfiles')
 
 STATICFILES_DIR = {
     os.path.join(BASE_DIR , "static")
